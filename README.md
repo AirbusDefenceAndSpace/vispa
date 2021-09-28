@@ -1,5 +1,9 @@
 (C) 2021 Airbus Defence and Space. Licensed under Apache 2.0
 
+https://img.shields.io/badge/License-Apache%202.0-brightgreen 
+https://img.shields.io/badge/Release-Beta-orange
+https://img.shields.io/badge/Version-0.0.1-brightgreen
+
 # VISPA Description
 
 This collection of files and folders containing the necessary information to visualise and simulate the Versatile In-Space and Planetary Arm (VISPA). Previously it was named LOCARM, and for easy of reference the names for the short term can informally be used interchangably. At the heart of the description package is the Unified Robot Description Format (URDF) that is commonly utalised in robotics to represent a robot model in the XML format. 
@@ -14,6 +18,7 @@ This collection of files and folders containing the necessary information to vis
     - [ROS 2 (distro foxy)](#ros-2-distro-foxy)
     - [ROS 1 (distro kinetic)](#ros-1-distro-kinetic)
     - [CoppeliaSim (Version 4.2)](#coppeliasim-version-42)
+    - [Matlab](#matlab)
   - [Caveats](#caveats)
   - [TODO](#todo)
 
