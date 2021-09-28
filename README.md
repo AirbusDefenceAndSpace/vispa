@@ -1,8 +1,14 @@
 (C) 2021 Airbus Defence and Space. Licensed under Apache 2.0
 
-https://img.shields.io/badge/License-Apache%202.0-brightgreen 
-https://img.shields.io/badge/Release-Beta-orange
-https://img.shields.io/badge/Version-0.0.1-brightgreen
+
+<p align="left">
+    <a href="#License" alt="License">
+        <img src="https://img.shields.io/badge/License-Apache%202.0-brightgreen " /></a>
+    <a href="#Release" alt="Release Cycle Type">
+        <img src="https://img.shields.io/badge/Release-Beta-orange" /></a>
+    <a href="#Version" alt="Version">
+        <img src="https://img.shields.io/badge/Version-0.0.1-brightgreen" /></a> 
+</p>
 
 # VISPA Description
 
