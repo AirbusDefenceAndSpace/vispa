@@ -1,20 +1,15 @@
 cff-version: 1.2.0
 authors: 
- - affiliation: "Airbus Defence and Space Ltd"
-   family-names: "Shilton"
+ - family-names: "Shilton"
    given-names: "Mark"
    orcid: "https://orcid.org/0000-0002-6410-8139"
- - affiliation: "Airbus Defence and Space Ltd"
-   family-names: "Garland"
+ - family-names: "Garland"
    given-names: "Martin"
--  affiliation: "Airbus Defence and Space Ltd"
-   family-names: "Hackett"
+-  family-names: "Hackett"
    given-names: "Chris"
--  affiliation: "Airbus Defence and Space Ltd"
-   family-names: "Allouis
+-  family-names: "Allouis
    given-names: "Elie"
--  affiliation: "Airbus Defence and Space Ltd"
-   family-names: "Lisle"
+-  family-names: "Lisle"
    given-names: "Matt"
 license: "Apache-2.0"
 message: "If you use this software, please cite it using these metadata."
