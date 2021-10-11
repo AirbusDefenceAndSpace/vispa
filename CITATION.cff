@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
 authors: 
 - family-names: "Shilton"
   given-names: "Mark"
@@ -7,11 +8,10 @@ authors:
   given-names: "Martin"
 - family-names: "Hackett"
   given-names: "Chris"
-- family-names: "Allouis
+- family-names: "Allouis"
   given-names: "Elie"
 - family-names: "Lisle"
   given-names: "Matt"
-message: "If you use this software, please cite it using these metadata."
 title: "VISPA URDF"
 version: 0.1
 url: "https://github.com/AirbusDefenceAndSpace/vispa"
