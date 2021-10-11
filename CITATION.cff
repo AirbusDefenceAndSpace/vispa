@@ -5,13 +5,12 @@ authors:
    orcid: "https://orcid.org/0000-0002-6410-8139"
  - family-names: "Garland"
    given-names: "Martin"
--  family-names: "Hackett"
+ - family-names: "Hackett"
    given-names: "Chris"
--  family-names: "Allouis
+ - family-names: "Allouis
    given-names: "Elie"
--  family-names: "Lisle"
+ - family-names: "Lisle"
    given-names: "Matt"
-license: "Apache-2.0"
 message: "If you use this software, please cite it using these metadata."
 title: "VISPA URDF"
 version: 0.1
