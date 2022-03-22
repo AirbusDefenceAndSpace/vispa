@@ -1,1 +1,0 @@
-smimport('vispa.urdf')
