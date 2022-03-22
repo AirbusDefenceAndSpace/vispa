@@ -17,7 +17,7 @@ jobs:
           # stats for and to generate the report for).
           # Remove the parameter when the stats repository
           # and the data repository are the same.
-          repository: AirbusDefenceAndSpace/vispa
+          # repository: AirbusDefenceAndSpace/vispa
           # Set a GitHub API token that can read the stats
           # repository, and that can push to the data
           # repository (which this workflow file lives in),
