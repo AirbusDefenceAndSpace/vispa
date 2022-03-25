@@ -131,3 +131,4 @@ Robotics System Toolbox license from MathWorks is required to create RigidBodyTr
 - [ ] Need to updated inertia data for the joints, in CoppeliaSim the physics work 'okay' but could be better.
 - [ ] Get model to import into Matlab  correctly.
 - [ ] Update CAD to newer version of the arm
+- [ ] Update Matlab
