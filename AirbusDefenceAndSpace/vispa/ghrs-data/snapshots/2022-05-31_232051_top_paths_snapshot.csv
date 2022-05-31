@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/AirbusDefenceAndSpace/vispa,15,10
+/AirbusDefenceAndSpace/vispa/tree/main/urdf,6,4
+/AirbusDefenceAndSpace/vispa/tree/main/meshes,4,3
+/AirbusDefenceAndSpace/vispa/blob/main/urdf/vispa.urdf,4,2
+/AirbusDefenceAndSpace/vispa/tree/main/.github/workflows,2,2
+/AirbusDefenceAndSpace/vispa/tree/main/images,2,2
+/AirbusDefenceAndSpace/vispa/tree/main/launch,2,2
+/AirbusDefenceAndSpace/vispa/tree/main/rviz,2,2
+/AirbusDefenceAndSpace/vispa/blob/main/.github/workflows/main.yml,1,1
+/AirbusDefenceAndSpace/vispa/blob/main/launch/display.launch,1,1
