@@ -109,11 +109,17 @@ roslaunch urdf_tutorial display.launch model:=src/vispa_description/vispa.urdf g
 
 ### CoppeliaSim (Version 4.2)
 
-Add-ons > URDF Importer
-
-Navigate to the VISPA_modifiedDH.urdf file and select. It will then take a few moments to import.
-
 ![CoppeliaSim](images/coppeliasim_vispa.png)
+
+```bash
+mkdir vispa && cd vispa
+git clone https://github.com/AirbusDefenceAndSpace/vispa.git
+```
+
+Start CoppeliaSim and select 'Add-ons > URDF Importer'
+
+Navigate to the VISPA_modifiedDH_CoppeliaSim.urdf file and select. It will then take a few moments to import.
+
 
 ### Matlab
 

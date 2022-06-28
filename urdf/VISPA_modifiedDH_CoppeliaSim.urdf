@@ -1,0 +1,142 @@
+<robot name="VISPA">
+
+  <link name="Link_0">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link0-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.627"/>
+      <inertia ixx="0.00281845585208" ixy="0" ixz="0" iyy="0.00281883333333" iyz="0" izz="0.00379978918542"/>
+      <origin xyz="0 0 0.0"/>
+    </inertial>
+  </link>
+
+  <link name="Link_1">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link1-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="2.328"/>
+      <inertia ixx="0.012" ixy="0" ixz="0" iyy="0.007" iyz="0.003" izz="0.008"/>
+      <origin xyz="0 -0.029 -0.043"/>
+    </inertial>
+  </link>
+
+  <link name="Link_2">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link2-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="3.995"/>
+      <inertia ixx="0.010 " ixy="0" ixz="0" iyy="0.578" iyz="0" izz="0.574"/>
+      <origin xyz="0.4 0 0.142"/>
+    </inertial>
+  </link>
+
+  <link name="Link_3">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link3-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="2.328"/>
+      <inertia ixx="0.012" ixy="0" ixz="0" iyy="0.008" iyz="0.003" izz="0.007"/>
+      <origin xyz="0 0.043 0.029"/>
+    </inertial>
+  </link>
+
+  <link name="Link_4">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link4-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="3.157"/>
+      <inertia ixx="0.199" ixy="0" ixz="0" iyy="0.193" iyz="0.01" izz="0.01"/>
+      <origin xyz="0 -0.043 -0.210"/>
+    </inertial>
+  </link>
+
+  <link name="Link_5">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link5-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="2.695"/>
+      <inertia ixx="0.029" ixy="0" ixz="0" iyy="0.006" iyz="-0.001" izz="0.027"/>
+      <origin xyz="0 0.125 -0.007"/>
+    </inertial>
+  </link>
+
+  <link name="Link_6">
+    <visual>
+      <geometry>
+        <mesh filename="package://vispa/meshes/Link6-DHReference-PublicRelease.stl"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.924"/>
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.001"/>
+      <origin xyz="0 0 0.0"/>
+    </inertial>
+  </link>
+
+  <joint name="Joint_1" type="revolute">
+    <parent link="Link_0"/>
+    <child link="Link_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0 0 0.18" rpy="0 0 0"/> 
+  </joint>
+
+  <joint name="Joint_2" type="revolute">
+    <parent link="Link_1"/>
+    <child link="Link_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0 0 0" rpy="1.57079632679 -1.57079632679 0"/> 
+  </joint>
+
+  <joint name="Joint_3" type="revolute">
+    <parent link="Link_2"/>
+    <child link="Link_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0.8 0 0" rpy="0 0 -1.57079632679"/> 
+  </joint>
+
+  <joint name="Joint_4" type="revolute">
+    <parent link="Link_3"/>
+    <child link="Link_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0 0.65 0" rpy="-1.57079632679 0 0"/> 
+  </joint>
+
+  <joint name="Joint_5" type="revolute">
+    <parent link="Link_4"/>
+    <child link="Link_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0 0 0" rpy="1.57079632679 0 0"/> 
+  </joint>
+
+  <joint name="Joint_6" type="revolute">
+    <parent link="Link_5"/>
+    <child link="Link_6"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <origin xyz="0 0.325 0" rpy="-1.57079632679 0 0"/> 
+  </joint>
+
+</robot>
