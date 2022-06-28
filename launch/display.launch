@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="model" default="$(find vispa_description)/urdf/vispa.urdf"/>
+  <arg name="model" default="$(find vispa_description)/urdf/VISPA_modifiedDH.urdf"/>
   <arg name="gui" default="false" />
   <arg name="rvizconfig" default="$(find vispa_description)/rviz/vispa_ros1.rviz" />
 

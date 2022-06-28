@@ -44,21 +44,21 @@ vispa_description
 |      display.launch
 |      display.launch.py
 └─ meshes
-|       LINK_0.stl
-|       LINK_0._col.stl
+|       Link0_DHReference-PublicRelease.stl
+|       Link0_DHReference-PublicRelease-col.stl
 |       ...
-|       LINK_BASE_col.stl
+|       Link6_DHReference-PublicRelease.stl
+|	Link6_DHReference-PublicRelease-col.stl
 └─ rviz
 |       vispa_ros1.rviz
 |       vispa_ros2.rviz
 └─ urdf
-        vispa.urdf
-        vispa.xacro
-        README.md
+        VISPA_modifiedDH.urdf
+        
 
 ```  
 ### urdf 
-This folder contains the URDF file (vispa.urdf) that describes the robotic arm characteristics, and links to CAD data. However this file isn't directly created by an engineer, it is actually generated from a secondary file **vispa.xacro**. Xacro format has a more modular format that allows for shorter and more readable constructs. The urdf is already generated, but to synthesize it again the README.md within the urdf folder provides instructions.
+This folder contains the URDF file (VISPA_modifiedDH.urdf) that describes the robotic arm characteristics, and links to CAD data. 
 
 ### meshes
 
@@ -66,7 +66,7 @@ Stores the CAD files for sections for the arm in STL format. Each section has tw
 
 ### rviz
 
-Setting files to view the model in the Robotic Operation System (ROS) visulaisation tool (RViz). ROS has two 'main' versions, ROS1 and ROS2, with subsequent two versions of Rviz. 
+Setting files to view the model in the Robotic Operation System (ROS) visualisation tool (RViz). ROS has two 'main' versions, ROS1 and ROS2, with subsequent two versions of Rviz. 
 
 ### launch
 
@@ -109,26 +109,20 @@ roslaunch urdf_tutorial display.launch model:=src/vispa_description/vispa.urdf g
 
 Add-ons > URDF Importer
 
-Navigate to the vispa.urdf file and select. It will then take a few moments to import.
+Navigate to the VISPA_modifiedDH.urdf file and select. It will then take a few moments to import.
 
 ![CoppeliaSim](images/coppeliasim_vispa.png)
 
 ### Matlab
 
-Matlab importing is currently not possible and is currently under investigation. Once working it will require a
-Robotics System Toolbox license from MathWorks is required to create RigidBodyTree objects
+An example matlab script is included (matlab_import.mat) that loads the URDF, generates a simple trajectory, and generates some simple plots of joint data. 
+
+![Matlab](images/Matlab_Example.png)
 
 ## Caveats
 
-1) CAD data is taken from an older version of VISPA/LOCARM, however the difference between this in terms of 'looks' and the latest CAD is relatively minor. This was used as it was a readily available STL files, future updates will feature a more modern design.
-2) The centres of rotation between segments was done 'by eye' and not using a parameteric CAD tool to provide actual measurements, this will be addressed in future updates.
-3) Importing the URDF into Matlab was attempted but failed, auther is currently unsure of the issue. Possible down to lack of a particular matlab add-on.
-4) Important into ROS using ROS2; have in the past used ROS1 but at this stage unable to document the exact proceedure. 
-5) CAD STL models might need to be reduced in size as load times is larger than normal expected.
+1) Important into ROS using ROS2; have in the past used ROS1 but at this stage unable to document the exact proceedure. 
+2) CAD STL models might need to be reduced in size as load times is larger than normal expected.
 
 ## TODO
 
-- [ ] Need to updated inertia data for the joints, in CoppeliaSim the physics work 'okay' but could be better.
-- [ ] Get model to import into Matlab  correctly.
-- [ ] Update CAD to newer version of the arm
-- [ ] Update Matlab

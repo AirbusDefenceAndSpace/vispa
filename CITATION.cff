@@ -12,8 +12,12 @@ authors:
   given-names: "Elie"
 - family-names: "Lisle"
   given-names: "Matt"
+- family-names: "Meringolo"
+  given-names: "Connor"
+- family-names: "Paganini"
+  given-names: "Davide"
 title: "VISPA URDF"
-version: 0.1
+version: 0.2
 url: "https://github.com/AirbusDefenceAndSpace/vispa"
 
 
