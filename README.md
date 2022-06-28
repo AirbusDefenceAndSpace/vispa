@@ -78,7 +78,7 @@ ROS works by using started scripts or launch files start 'nodes'. The launch fol
 
 ## Viewing Model
 
-### ROS 2 (distro foxy)
+### ROS 2 (distro foxy + Ubuntu 18.04 LTS)
 
 This was tested on Ubuntu 18.04LTS with the ROS2 Foxy version. The following assumes Ros2 is already installed, if not then the webpage - https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Binary.html - is proably a good starting point to understanding how to install it. 
 
@@ -104,25 +104,26 @@ ros2 launch vispa display.launch.py
 
 ### ROS 1 (distro kinetic)
 
-This is the basic command to get the model to run with the original rviz, but can't give gurantees on this...
+This is the basic command to get the model to run with the original rviz, but no gurantees on this...
 
 ```bash
 roslaunch urdf_tutorial display.launch model:=src/vispa_description/vispa.urdf gui:=True 
 ```
 
-### CoppeliaSim (Version 4.2)
+### CoppeliaSim (Version 4.2 + Windows 10)
 
-![CoppeliaSim](images/coppeliasim_vispa.png)
+CoppeliaSim is a robotic simulator used in industry and academia. This was tested on version 4.2 in Windows 10. I used git bash to perform the clone but other methods in windows are available.
 
 ```bash
-mkdir vispa && cd vispa
 git clone https://github.com/AirbusDefenceAndSpace/vispa.git
+cd vispa
 ```
 
-Start CoppeliaSim and select 'Add-ons > URDF Importer'
+Start CoppeliaSim and select 'Plugins -> URDF Importer'
 
-Navigate to the VISPA_modifiedDH_CoppeliaSim.urdf file and select. It will then take a few moments to import.
+Navigate to the **VISPA_modifiedDH_CoppeliaSim.urdf** file in the `vispa/urdf` folder and select. It will then take a few moments to import.
 
+![CoppeliaSim](images/coppeliasim_vispa.png)
 
 ### Matlab
 
