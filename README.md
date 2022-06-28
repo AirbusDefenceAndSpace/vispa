@@ -125,9 +125,17 @@ Navigate to the **VISPA_modifiedDH_CoppeliaSim.urdf** file in the `vispa/urdf` f
 
 ![CoppeliaSim](images/coppeliasim_vispa.png)
 
-### Matlab
+### Matlab (R2020b + Robotic Systems Toolbox)
 
-An example matlab script is included (matlab_import.mat) that loads the URDF, generates a simple trajectory, and generates some simple plots of joint data. 
+An example matlab script is included (matlab_import.m) that loads the URDF, generates a simple trajectory, and generates some simple plots of joint data. Its important to mention that the scipt uses the `importrobot` function from Matlab's own Robotic Systems Toolbox (https://uk.mathworks.com/products/robotics.html)
+
+Get the vispa repository via the cloning command.
+ 	
+```bash
+git clone https://github.com/AirbusDefenceAndSpace/vispa.git
+```
+
+Open Matlab, then change the current working directory to the repo. Open matlab_import.m and click run. 
 
 ![Matlab](images/Matlab_Example.PNG)
 
