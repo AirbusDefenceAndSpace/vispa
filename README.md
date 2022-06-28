@@ -42,6 +42,7 @@ vispa_description
 |
 └─ images
 |       coppeliasim_vispa.png
+|	...
 └─ launch
 |      display.launch
 |      display.launch.py
@@ -56,6 +57,7 @@ vispa_description
 |       vispa_ros2.rviz
 └─ urdf
         VISPA_modifiedDH.urdf
+	VISPA_modifiedDH_Ros2.urdf
         
 
 ```  
@@ -78,26 +80,27 @@ ROS works by using started scripts or launch files start 'nodes'. The launch fol
 
 ### ROS 2 (distro foxy)
 
+This was tested on Ubuntu 18.04LTS with the ROS2 Foxy version. The following assumes Ros2 is already installed, if not then the webpage - https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Binary.html - is proably a good starting point to understanding how to install it. 
+
+Start by cloning the vispa repo to a suitable location.
+
 ```bash
-mkdir -p ws/src
+git clone https://github.com/AirbusDefenceAndSpace/vispa.git
+cd vispa
 ```
 
-Copy vispa_description to src folder.
+Then build the package using the following two commands. The author used the Zsh command shell, if using another one for instance, Bash, then change the suffix on 'setup.' to what is appropriate. 
 
 ```bash
-cd ws
 colcon build
 . install/setup.zsh 
 ```
-```bash
-. install/setup.zsh 
-
-```
+Then launch the rviz viewer that hopefully should load the Vispa Urdf and provide a small gui to control joint positions.
 
 ```bash
-ros2 launch vispa_description display.launch.py 
+ros2 launch vispa display.launch.py 
 ```
-![Ros](images/ros_vispa.png)
+![Ros](images/vispa_ros2.png)
 
 ### ROS 1 (distro kinetic)
 
