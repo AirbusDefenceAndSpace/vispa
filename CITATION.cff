@@ -16,6 +16,9 @@ authors:
   given-names: "Connor"
 - family-names: "Paganini"
   given-names: "Davide"
+- family-names: "Hall"
+  given-names: "Alexander"
+  orcid: "https://orcid.org/0000-0002-5866-2221"
 title: "VISPA URDF"
 version: 0.2
 url: "https://github.com/AirbusDefenceAndSpace/vispa"
