@@ -40,7 +40,7 @@
     </visual>
     <inertial>
       <mass value="3.995"/>
-      <inertia ixx="0.010 " ixy="0" ixz="0" iyy="0.578" iyz="0" izz="0.574"/>
+      <inertia ixx="0.010" ixy="0" ixz="0" iyy="0.578" iyz="0" izz="0.574"/>
       <origin xyz="0.4 0 0.142"/>
     </inertial>
   </link>
@@ -119,7 +119,7 @@
     <child link="Link_1"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0 0 0.18" rpy="0 0 0"/> 
+    <origin xyz="0 0 0.18" rpy="0 0 0"/>
   </joint>
 
   <joint name="Joint_2" type="revolute">
@@ -127,7 +127,7 @@
     <child link="Link_2"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0 0 0" rpy="1.57079632679 -1.57079632679 0"/> 
+    <origin xyz="0 0 0" rpy="1.57079632679 -1.57079632679 0"/>
   </joint>
 
   <joint name="Joint_3" type="revolute">
@@ -135,7 +135,7 @@
     <child link="Link_3"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0.8 0 0" rpy="0 0 -1.57079632679"/> 
+    <origin xyz="0.8 0 0" rpy="0 0 -1.57079632679"/>
   </joint>
 
   <joint name="Joint_4" type="revolute">
@@ -143,7 +143,7 @@
     <child link="Link_4"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0 0.65 0" rpy="-1.57079632679 0 0"/> 
+    <origin xyz="0 0.65 0" rpy="-1.57079632679 0 0"/>
   </joint>
 
   <joint name="Joint_5" type="revolute">
@@ -151,7 +151,7 @@
     <child link="Link_5"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0 0 0" rpy="1.57079632679 0 0"/> 
+    <origin xyz="0 0 0" rpy="1.57079632679 0 0"/>
   </joint>
 
   <joint name="Joint_6" type="revolute">
@@ -159,7 +159,7 @@
     <child link="Link_6"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
-    <origin xyz="0 0.325 0" rpy="-1.57079632679 0 0"/> 
+    <origin xyz="0 0.325 0" rpy="-1.57079632679 0 0"/>
   </joint>
 
 </robot>
